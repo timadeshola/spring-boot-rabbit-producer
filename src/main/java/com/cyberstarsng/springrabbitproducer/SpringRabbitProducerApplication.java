@@ -93,7 +93,7 @@ class CustomScheduler {
     private final Producer producer;
     private final ObjectMapper mapper;
 
-    @Scheduled(fixedDelay = 60000)
+    @Scheduled(fixedDelay = 10000)
     public void processRecords() throws JsonProcessingException {
         Faker faker = new Faker();
         List<String> genders = Arrays.asList("Male", "Female");
